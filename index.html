@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Creator Verification</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Prism for syntax highlighting -->
+    <link href="https://esm.sh/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Project Creator Inspector</h1>
+            <p>Identifies the owner of the current Websim project.</p>
+        </header>
+
+        <main>
+            <!-- Creator Profile Card -->
+            <div id="creator-card" class="card loading">
+                <div class="avatar-container">
+                    <img id="creator-avatar" src="" alt="Creator Avatar" class="skeleton">
+                </div>
+                <div class="info-container">
+                    <h2 id="creator-username" class="skeleton-text">Loading...</h2>
+                    <p id="creator-id" class="meta skeleton-text">ID: ...</p>
+                </div>
+                <div id="verification-badge" class="badge hidden">
+                    <!-- Status will go here -->
+                </div>
+            </div>
+
+            <!-- Code Snippet Section -->
+            <section class="code-section">
+                <h3>How to verify in code</h3>
+                <p>Use the <code>window.websim</code> API to compare the current user against the project creator.</p>
+                <pre><code class="language-javascript" id="code-display">
+// Loading code snippet...
+                </code></pre>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="logic.js"></script>
+    <script src="https://esm.sh/prismjs" defer></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
